@@ -1,0 +1,22 @@
+batch_size = 128
+epochs = 20
+lr = 3e-5
+gamma = 0.7
+seed = 1234
+
+model = TNT(
+    image_size = 160,       # size of image
+    patch_dim = 160,        # dimension of patch token
+    pixel_dim = 24,         # dimension of pixel token
+    patch_size = 16,        # patch size
+    pixel_size = 4,         # pixel size
+    depth = 4,              # depth
+    num_classes = 3,     # output number of classes
+    attn_dropout = 0.1,     # attention dropout
+    ff_dropout = 0.1        # feedforward dropout
+).to(device)
+
+
+505 secs
+
+17607Mb
